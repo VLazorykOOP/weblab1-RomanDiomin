@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма введення інформації</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Форма введення інформації</h1>
+        <nav>
+            <a href="spiski.html"  type="text/html">Списки</a>
+            <a href="about-author.html"  type="text/html">Про автора</a>
+            <a href="about-company.html"  type="text/html">Про компанію</a>
+            <a href="news.html"  type="text/html">Новини</a>
+            <a href="forma.html"  type="text/html">Форма</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Заповніть форму</h2>
+            <form action="/submit" method="POST" novalidate lang="uk">
+
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required maxlength="50" class="form-input" placeholder="Ваше ім'я">
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required class="form-input" placeholder="example@mail.com">
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+380 123 456 789">
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required class="form-input">
+
+                <label for="comments">Коментарі:</label>
+                <textarea id="comments" name="comments" cols="30" rows="5" wrap="soft" placeholder="Ваші коментарі"></textarea>
+
+                <label for="dob">Дата народження:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="week">Тиждень:</label>
+                <input type="week" id="week" name="week">
+
+                <label for="country">Країна:</label>
+                <select id="country" name="country" required>
+                    <optgroup label="Європа">
+                        <option value="ukraine">Україна</option>
+                        <option value="poland">Польща</option>
+                    </optgroup>
+                    <optgroup label="Азія">
+                        <option value="china">Китай</option>
+                        <option value="india">Індія</option>
+                    </optgroup>
+                </select>
+
+                <button type="submit" formtarget="_blank" class="submit-button">Відправити</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Контакти: <a href="mailto:roman.dyomin@example.com">roman.dyomin@example.com</a></p>
+        <p>© 2024 Меблі Люкс</p>
+    </footer>
+</body>
+</html>
